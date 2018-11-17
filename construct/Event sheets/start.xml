@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>start</name>
+    <events>
+        <event-block sid="790851914036926">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="897653164108613" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="377076813167069" type="System">
+                    <param id="0" name="Layout">fase-1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>fase-1</name>
+    <events>
+        <event-block sid="146027361731821">
+            <conditions>
+                <condition id="2" name="Key is down" sid="247315024220161" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="894197525403800" type="zack">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="756416931827277" type="zack">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="224340244190000">
+            <conditions>
+                <condition id="2" name="Key is down" sid="791198744513013" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="351104236741090" type="zack">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="194950656555490" type="zack">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="339055982839298">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="535203717885552" type="lenhador" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="851163661696166">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="678114511143849" type="lenhador">
+                            <param id="0" name="Object">zack</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="280221440860082">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="960693766153008" type="zack">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">lenhador.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="281316883424833" type="lenhador">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Value">&quot;left&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="409608653766076">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="291169081458313" type="zack">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">lenhador.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="228813123395020" type="lenhador">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Value">&quot;right&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="979360469266627">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="349465856643222" type="lenhador">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="231744834783718" type="lenhador">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="554434916643759" type="lenhador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="590051050836351" type="lenhador">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="827765415046266">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="498108017640439" type="lenhador">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="497682323793854" type="lenhador">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="999567716415321" type="lenhador">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="927252704250684" type="lenhador">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="776824375413365">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="300034883422054" type="lenhador">
+                            <param id="0" name="Object">tronco</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="850324966811683">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="742976363629825" type="lenhador">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;left&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="520789113072315" type="lenhador">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Value">&quot;right&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="236951496751530">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="823841343527559" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="956624961285988" type="lenhador">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Value">&quot;left&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
