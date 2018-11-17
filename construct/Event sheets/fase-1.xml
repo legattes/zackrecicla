@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>fase-1</name>
     <events>
+        <variable constant="0" name="timer" sid="797000992321332" static="0" type="number">60</variable>
         <event-block sid="146027361731821">
             <conditions>
                 <condition id="2" name="Key is down" sid="247315024220161" type="Keyboard">
@@ -157,7 +158,182 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="191831636188944">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="630671554583990" type="lenhador">
+                            <param id="0" name="Object">zack</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="791682536786335">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="694771561780959" type="zack">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">lenhador.Y - 150</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="461898105230603" type="lenhador" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="397417819024995">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="541053094359249" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="765826863071757">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="865161654463868" type="zack">
+                                            <param id="0" name="Instance variable">vida</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="715319585301302" type="zack">
+                                            <param id="0" name="Instance variable">vida</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="951465988535427">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="262603475905490" type="zack">
+                    <param id="0" name="Object">arvore1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="891988281394266" type="Sprite">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="886096601049673" type="Text2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="130946488997790" type="Text3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="125489914489226">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="835707809051327" type="Sprite" />
+                <condition id="2" name="Key is down" sid="846433782649287" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="361618513333910" type="Sprite">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="301579891668274" type="Text2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="783034784395841" type="Text3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="755118629315575">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="513216562377874" type="zack">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="576745624479924" type="heart3">
+                    <param id="0" name="Animation">&quot;3vidas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="301295845434148">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="173064181115545" type="zack">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="178062652689290" type="heart3">
+                    <param id="0" name="Animation">&quot;2vidas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="363025040789079">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="772145042044918" type="zack">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="115631364698388" type="heart3">
+                    <param id="0" name="Animation">&quot;1vida&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="944326851735689">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="664857954581763" type="zack">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="809442792029445" type="zack" />
+                <action id="-15" name="Set visible" sid="155153299328803" type="deadframe">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="147680891414913" type="dead_confirm">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="161548383038674" type="deadmsg">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="389123857722402">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="161142457335665" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="625855285579514" type="deadframe" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="598350699913127" type="System" />
+                <action id="-21" name="Reset global variables" sid="273613941353421" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="501210210785315">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="156805032668595" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="190736031131904" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="941936648750736" type="timer">
+                    <param id="0" name="Text">timer</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

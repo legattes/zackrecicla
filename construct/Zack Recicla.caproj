@@ -62,6 +62,9 @@
         </object-type>
         <object-type name="zack" sid="810931311183557">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="vida" sid="672312145418117" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="541254628254339">
                     <behavior id="Platform" />
@@ -165,7 +168,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="808347789659505">
+        <object-type name="arvore1" sid="808347789659505">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528832514053513" speed="5">
@@ -303,8 +306,95 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="377341429681737">
+        <object-type name="Sprite" sid="812736927393814">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464695362829364" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501104" original-source="C:\Projects\zackrecicla\sprites\scroll-1.png">
+                        <collision-poly>
+                            <point x="0.132411" y="0.147903" />
+                            <point x="0.5" y="0.13245" />
+                            <point x="0.869565" y="0.145695" />
+                            <point x="0.887352" y="0.874172" />
+                            <point x="0.5" y="0.909492" />
+                            <point x="0.128458" y="0.856512" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="409012800317896">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="739734490566873">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="heart3" sid="261139012667188">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="3vidas" pingpong="0" repeatcount="1" repeatto="0" sid="982503505288204" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\sprites\heart-3.png">
+                        <collision-poly>
+                            <point x="0.05625" y="0.169014" />
+                            <point x="0.5" y="0.21831" />
+                            <point x="0.923437" y="0.230047" />
+                            <point x="0.942187" y="0.5" />
+                            <point x="0.9" y="0.699531" />
+                            <point x="0.5" y="0.870892" />
+                            <point x="0.0953125" y="0.713615" />
+                            <point x="0.0367187" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="2vidas" pingpong="0" repeatcount="1" repeatto="0" sid="118891207949295" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\sprites\heart-2.png">
+                        <collision-poly>
+                            <point x="0.05625" y="0.169014" />
+                            <point x="0.5" y="0.21831" />
+                            <point x="0.923437" y="0.230047" />
+                            <point x="0.942187" y="0.5" />
+                            <point x="0.9" y="0.699531" />
+                            <point x="0.5" y="0.870892" />
+                            <point x="0.0953125" y="0.713615" />
+                            <point x="0.0367187" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="1vida" pingpong="0" repeatcount="1" repeatto="0" sid="504886416347948" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\sprites\heart-1.png">
+                        <collision-poly>
+                            <point x="0.05625" y="0.169014" />
+                            <point x="0.5" y="0.21831" />
+                            <point x="0.923437" y="0.230047" />
+                            <point x="0.942187" y="0.5" />
+                            <point x="0.9" y="0.699531" />
+                            <point x="0.5" y="0.870892" />
+                            <point x="0.0953125" y="0.713615" />
+                            <point x="0.0367187" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deadframe" sid="389006738170011">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="850172457482933" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deadmsg" sid="966999077545581">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="dead_confirm" sid="146751614294448">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="timer" sid="731584906293229">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="timer" sid="703485663865307" type="number" />
+            </instance-variables>
         </object-type>
     </object-folder>
     <families />

@@ -10,7 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">start</layout>
+        <layout order="0">start</layout>
+        <layout active="1" order="1">fase-1</layout>
+        <event-sheet order="2">fase-1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -21,17 +23,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/zack/" />
         <folder expanded="1" path="animation-folder/tronco/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/arvore1/" />
         <folder expanded="1" path="animation-folder/lenhador/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/heart3/" />
+        <folder expanded="1" path="animation-folder/deadframe/" />
     </folders-expanded>
 </c2uistate>
