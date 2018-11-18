@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>fase-1</name>
     <events>
+        <variable constant="0" name="lixos" sid="773228798563515" static="0" type="number">0</variable>
         <variable constant="0" name="timer" sid="797000992321332" static="0" type="number">60</variable>
         <event-block sid="146027361731821">
             <conditions>
@@ -207,7 +208,7 @@
         <event-block sid="951465988535427">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="262603475905490" type="zack">
-                    <param id="0" name="Object">arvore1</param>
+                    <param id="0" name="Object">bilhete</param>
                 </condition>
             </conditions>
             <actions>
@@ -239,6 +240,7 @@
                 <action id="-15" name="Set visible" sid="783034784395841" type="Text3">
                     <param id="0" name="Visibility">0</param>
                 </action>
+                <action id="-9" name="Destroy" sid="254418960688982" type="bilhete" />
             </actions>
         </event-block>
         <event-block sid="755118629315575">
@@ -296,6 +298,10 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="809442792029445" type="zack" />
+                <action id="4" name="Set animation" sid="488439003348000" type="deadframe">
+                    <param id="0" name="Animation">&quot;morte&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
                 <action id="-15" name="Set visible" sid="155153299328803" type="deadframe">
                     <param id="0" name="Visibility">1</param>
                 </action>
@@ -314,10 +320,32 @@
                 </condition>
                 <condition id="-9" name="Is visible" sid="625855285579514" type="deadframe" />
             </conditions>
-            <actions>
-                <action id="-26" name="Restart layout" sid="598350699913127" type="System" />
-                <action id="-21" name="Reset global variables" sid="273613941353421" type="System" />
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="181726952929799">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="715541707931321" type="deadframe">
+                            <param id="0" name="Animation">&quot;morte&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="273613941353421" type="System" />
+                        <action id="-26" name="Restart layout" sid="598350699913127" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="445551830576737">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="262275919456753" type="deadframe">
+                            <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="863604773168551" type="System">
+                            <param id="0" name="Layout">&quot;start&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="501210210785315">
             <conditions>
@@ -334,6 +362,86 @@
                     <param id="0" name="Text">timer</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="754667938895845">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="360816169713941" type="lixo1">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="533804111198596" type="lixo1" />
+                <action id="-10" name="Add to" sid="274978422929140" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="243153913915755">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="942086176241081" type="lixo2">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="466842175811071" type="lixo2" />
+                <action id="-10" name="Add to" sid="688130089295895" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="240524169618714">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="919627416428920" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="897092650413657" type="lixosCount">
+                    <param id="0" name="Text">lixos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="600494991370879">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="637360044884952" type="lixeira">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="790284634386317">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="382524000201738" type="System">
+                            <param id="0" name="Variable">lixos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="733811740563761" type="deadframe">
+                            <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="279967247903885" type="deadframe">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="383316559899828">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="239449531381659" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="947128473735689" type="System">
+                            <param id="0" name="Layout">&quot;start&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

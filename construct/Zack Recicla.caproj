@@ -31,6 +31,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>start</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -69,7 +70,7 @@
                 <behavior-type name="Platform" sid="541254628254339">
                     <behavior id="Platform" />
                 </behavior-type>
-                <behavior-type name="ScrollTo" sid="297522143772066">
+                <behavior-type name="ScrollTo" sid="621965739508752">
                     <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
@@ -146,7 +147,7 @@
         </object-type>
         <object-type name="fundo1" sid="946542452100963">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Projects\zackrecicla\sprites\forest\freetileset\png\BG\BG.png" />
+            <texture original-source="C:\Projects\zackrecicla\construct\Textures\fundo1.png" />
         </object-type>
         <object-type name="tronco" sid="511529135547441">
             <plugin id="Sprite" />
@@ -379,7 +380,10 @@
         <object-type name="deadframe" sid="389006738170011">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="850172457482933" speed="5">
+                <animation framecount="1" loop="0" name="morte" pingpong="0" repeatcount="1" repeatto="0" sid="850172457482933" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="sucesso" pingpong="0" repeatcount="1" repeatto="0" sid="292131972139013" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -395,6 +399,189 @@
             <instance-variables>
                 <instance-variable name="timer" sid="703485663865307" type="number" />
             </instance-variables>
+        </object-type>
+        <object-type name="bilhete" sid="693030164547778">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240240360228738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lixo1" sid="913821222693311">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507878380830470" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Projects\zackrecicla\sprites\forest\objects\jornal.png">
+                        <collision-poly>
+                            <point x="0.0152082" y="0.319991" />
+                            <point x="0.475352" y="0" />
+                            <point x="0.968759" y="0.28441" />
+                            <point x="0.949356" y="0.465278" />
+                            <point x="0.982619" y="0.660971" />
+                            <point x="0.475352" y="0.981195" />
+                            <point x="0" y="0.63725" />
+                            <point x="0.0179802" y="0.465278" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lixo2" sid="597116492833456">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="600692273699560" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Projects\ref\crumpled-paper-ball-free-vector.png">
+                        <collision-poly>
+                            <point x="0.0585106" y="0.36236" />
+                            <point x="0.5" y="0.00842697" />
+                            <point x="0.973404" y="0.328652" />
+                            <point x="0.954787" y="0.5" />
+                            <point x="0.986702" y="0.685393" />
+                            <point x="0.5" y="0.988764" />
+                            <point x="0.0345745" y="0.662921" />
+                            <point x="0.0611702" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="734639690220654">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\ref\2224_dark.png" />
+        </object-type>
+        <object-type name="Lixos" sid="327526907782805">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="lixosCount" sid="900921639186028">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="654058853487669">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="161438466337041">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339688915619363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Projects\zackrecicla\sprites\forest\backgrounds\13.png">
+                        <collision-poly>
+                            <point x="0.0332031" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.806452" />
+                            <point x="0.304688" y="0.580645" />
+                            <point x="0.09375" y="0.494624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="413821942723652">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="878771349829347">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589997442990621" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Projects\zackrecicla\sprites\forest\backgrounds\14.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="614772439342845">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="779002733882126">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455293634651424" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Projects\zackrecicla\sprites\forest\backgrounds\15.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.90625" y="0.494624" />
+                            <point x="0.695313" y="0.580645" />
+                            <point x="0.5" y="0.806452" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="872425093876472">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\forest\backgrounds\17.png" />
+        </object-type>
+        <object-type name="Sprite5" sid="730846209189240">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="705874848707892" speed="5">
+                    <frame duration="1" hotspotX="0.500494" hotspotY="0.50237" original-source="C:\Projects\zackrecicla\sprites\titulo.png">
+                        <collision-poly>
+                            <point x="0.0602172" y="0.2891" />
+                            <point x="0.499506" y="0.218009" />
+                            <point x="0.923988" y="0.364929" />
+                            <point x="0.932873" y="0.49763" />
+                            <point x="0.932873" y="0.677725" />
+                            <point x="0.499506" y="0.725118" />
+                            <point x="0.0621915" y="0.701422" />
+                            <point x="0.0750247" y="0.49763" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="970835414476887">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="832345201642968">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\ref\FreeVector-Landscape-Background\FreeVector-Landscape-Background.jpg" />
+        </object-type>
+        <object-type name="lixeira" sid="147009095266552">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="773988830659899" speed="5">
+                    <frame duration="1" hotspotX="0.502825" hotspotY="1" original-source="C:\Projects\zackrecicla\lixeira-azul.png">
+                        <collision-poly>
+                            <point x="0.101695" y="0.0565371" />
+                            <point x="0.514124" y="0.00353357" />
+                            <point x="0.903955" y="0.0706714" />
+                            <point x="0.932203" y="0.473498" />
+                            <point x="0.903955" y="0.876325" />
+                            <point x="0.514124" y="0.996466" />
+                            <point x="0.101695" y="0.890459" />
+                            <point x="0.0677966" y="0.473498" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="204414020836477">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717990811244470" speed="5">
+                    <frame duration="1" hotspotX="0.514124" hotspotY="0.473498" original-source="C:\Projects\zackrecicla\lixeira-azul.png">
+                        <collision-poly>
+                            <point x="0.101695" y="0.0565371" />
+                            <point x="0.514124" y="0.00353357" />
+                            <point x="0.903955" y="0.0706714" />
+                            <point x="0.932203" y="0.473498" />
+                            <point x="0.903955" y="0.876325" />
+                            <point x="0.514124" y="0.996466" />
+                            <point x="0.101695" y="0.890459" />
+                            <point x="0.0677966" y="0.473498" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
