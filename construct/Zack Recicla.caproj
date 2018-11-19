@@ -16,8 +16,11 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -31,7 +34,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>start</first-layout>
+    <first-layout>fase-1</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -44,7 +47,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -59,7 +62,7 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <texture original-source="C:\Projects\zackrecicla\sprites\forest\backgrounds\2.png" />
+            <texture original-source="C:\Projects\ref\Free Vector Backgrounds Game Kit\Forest\PNG PALALLAX\layer_01_1920 x 1080.png" />
         </object-type>
         <object-type name="zack" sid="810931311183557">
             <plugin id="Sprite" />
@@ -72,6 +75,9 @@
                 </behavior-type>
                 <behavior-type name="ScrollTo" sid="621965739508752">
                     <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="973710072011569">
+                    <behavior id="Flash" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -86,68 +92,68 @@
                     </frame>
                 </animation>
                 <animation framecount="7" loop="0" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="350333501221215" speed="5">
-                    <frame duration="1" hotspotX="0.532915" hotspotY="0.938272" original-source="C:\Projects\zackrecicla\sprites\zack\zack-1.png">
+                    <frame duration="1" hotspotX="0.507837" hotspotY="0.927984" original-source="C:\Projects\zackrecicla\sprites\zack\zack-1.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.940329" />
-                            <point x="0" y="0.938272" />
+                            <point x="0.210031" y="0.111111" />
+                            <point x="0.92163" y="0.109053" />
+                            <point x="0.924765" y="0.938271" />
+                            <point x="0.210031" y="0.938272" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.53605" hotspotY="0.921811" original-source="C:\Projects\zackrecicla\sprites\zack\zack-2.png">
+                    <frame duration="1" hotspotX="0.507837" hotspotY="0.927984" original-source="C:\Projects\zackrecicla\sprites\zack\zack-2.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0.981191" y="0.925926" />
-                            <point x="0" y="0.927984" />
+                            <point x="0.219436" y="0.115226" />
+                            <point x="0.92163" y="0.115226" />
+                            <point x="0.924765" y="0.927984" />
+                            <point x="0.216301" y="0.930042" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.551724" hotspotY="0.919753" original-source="C:\Projects\zackrecicla\sprites\zack\zack-3.png">
+                    <frame duration="1" hotspotX="0.507837" hotspotY="0.927984" original-source="C:\Projects\zackrecicla\sprites\zack\zack-3.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.925926" />
-                            <point x="0.0125392" y="0.925926" />
+                            <point x="0.153605" y="0.115226" />
+                            <point x="0.959248" y="0.113169" />
+                            <point x="0.959248" y="0.925926" />
+                            <point x="0.153605" y="0.927984" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.529781" hotspotY="0.921811" original-source="C:\Projects\zackrecicla\sprites\zack\zack-4.png">
+                    <frame duration="1" hotspotX="0.507837" hotspotY="0.927984" original-source="C:\Projects\zackrecicla\sprites\zack\zack-4.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.91358" />
-                            <point x="0.0125392" y="0.91358" />
+                            <point x="0.238245" y="0.111111" />
+                            <point x="0.9279" y="0.111111" />
+                            <point x="0.9279" y="0.911522" />
+                            <point x="0.23511" y="0.91358" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.561128" hotspotY="0.919753" original-source="C:\Projects\zackrecicla\sprites\zack\zack-5.png">
+                    <frame duration="1" hotspotX="0.507837" hotspotY="0.927984" original-source="C:\Projects\zackrecicla\sprites\zack\zack-5.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.907407" />
-                            <point x="0.00626959" y="0.907407" />
+                            <point x="0.206897" y="0.109053" />
+                            <point x="0.918496" y="0.111111" />
+                            <point x="0.918496" y="0.903292" />
+                            <point x="0.210031" y="0.903292" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.545455" hotspotY="0.934156" original-source="C:\Projects\zackrecicla\sprites\zack\zack-6.png">
+                    <frame duration="1" hotspotX="0.507837" hotspotY="0.927984" original-source="C:\Projects\zackrecicla\sprites\zack\zack-6.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0.996865" y="0.925926" />
-                            <point x="0" y="0.925926" />
+                            <point x="0.206897" y="0.111111" />
+                            <point x="0.893417" y="0.109053" />
+                            <point x="0.893417" y="0.923455" />
+                            <point x="0.206897" y="0.923455" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.517241" hotspotY="0.930041" original-source="C:\Projects\zackrecicla\sprites\zack\zack-8.png">
+                    <frame duration="1" hotspotX="0.507837" hotspotY="0.927984" original-source="C:\Projects\zackrecicla\sprites\zack\zack-8.png">
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0.990596" y="0.919753" />
-                            <point x="0.0125392" y="0.919753" />
+                            <point x="0.197492" y="0.109054" />
+                            <point x="0.902822" y="0.106996" />
+                            <point x="0.902822" y="0.917695" />
+                            <point x="0.197492" y="0.915638" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="fundo1" sid="946542452100963">
+        <object-type name="bg1" sid="946542452100963">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Projects\zackrecicla\construct\Textures\fundo1.png" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\rio\bg-2.png" />
         </object-type>
         <object-type name="tronco" sid="511529135547441">
             <plugin id="Sprite" />
@@ -268,9 +274,20 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="9" loop="0" name="morre" pingpong="0" repeatcount="1" repeatto="0" sid="141354753459825" speed="5">
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" />
+                </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="687172277144274">
+        <object-type name="arvore2" sid="687172277144274">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="749515317393401" speed="5">
@@ -289,25 +306,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite7" sid="375553775614558">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539544363255328" speed="5">
-                    <frame duration="1" hotspotX="0.511278" hotspotY="0.984615" original-source="C:\Projects\zackrecicla\sprites\forest\objects\Bush (2).png">
-                        <collision-poly>
-                            <point x="0.135338" y="0.276923" />
-                            <point x="0.496241" y="0.0153846" />
-                            <point x="0.879699" y="0.246154" />
-                            <point x="0.932331" y="0.492308" />
-                            <point x="0.992481" y="0.984615" />
-                            <point x="0.496241" y="1" />
-                            <point x="0.0075188" y="0.984615" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="812736927393814">
+        <object-type name="papiro" sid="812736927393814">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464695362829364" speed="5">
@@ -377,22 +376,22 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="deadframe" sid="389006738170011">
+        <object-type name="modal" sid="389006738170011">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="morte" pingpong="0" repeatcount="1" repeatto="0" sid="850172457482933" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\modal-morte.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="sucesso" pingpong="0" repeatcount="1" repeatto="0" sid="292131972139013" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\modal-sucesso.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="tempo" pingpong="0" repeatcount="1" repeatto="0" sid="817221495958903" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\modal-tempo.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="faltalixo" pingpong="0" repeatcount="1" repeatto="0" sid="725985606337314" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\modal-faltalixo.png" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="deadmsg" sid="966999077545581">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="dead_confirm" sid="146751614294448">
-            <plugin id="Text" />
         </object-type>
         <object-type name="timer" sid="731584906293229">
             <plugin id="Text" />
@@ -408,7 +407,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="lixo1" sid="913821222693311">
+        <object-type name="papel1" sid="913821222693311">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507878380830470" speed="5">
@@ -427,7 +426,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="lixo2" sid="597116492833456">
+        <object-type name="papel" sid="597116492833456">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="600692273699560" speed="5">
@@ -445,10 +444,6 @@
                     </frame>
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground" sid="734639690220654">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Projects\ref\2224_dark.png" />
         </object-type>
         <object-type name="Lixos" sid="327526907782805">
             <plugin id="Text" />
@@ -515,7 +510,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground2" sid="872425093876472">
+        <object-type name="agua" sid="872425093876472">
             <plugin id="TiledBg" />
             <texture original-source="C:\Projects\zackrecicla\sprites\forest\backgrounds\17.png" />
         </object-type>
@@ -541,11 +536,11 @@
         <object-type name="Text" sid="970835414476887">
             <plugin id="Text" />
         </object-type>
-        <object-type name="TiledBackground3" sid="832345201642968">
+        <object-type name="startbg" sid="832345201642968">
             <plugin id="TiledBg" />
             <texture original-source="C:\Projects\ref\FreeVector-Landscape-Background\FreeVector-Landscape-Background.jpg" />
         </object-type>
-        <object-type name="lixeira" sid="147009095266552">
+        <object-type name="lixeiraazul" sid="147009095266552">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="773988830659899" speed="5">
@@ -564,20 +559,439 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite8" sid="204414020836477">
+        <object-type name="fundopreto" sid="605389825213688">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717990811244470" speed="5">
-                    <frame duration="1" hotspotX="0.514124" hotspotY="0.473498" original-source="C:\Projects\zackrecicla\lixeira-azul.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859768459081307" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="puff" sid="209653134909465">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991426646350804" speed="5">
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                    <frame duration="1" hotspotX="0.510288" hotspotY="0.940789" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chao2" sid="787651558273047">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="380571470317206">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Projects\ref\Free Vector Backgrounds Game Kit\Forest\PNG PALALLAX\layer_01_1920 x 1080.png" />
+        </object-type>
+        <object-type name="bg2" sid="465131135508335">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\rio\bg-2.png" />
+        </object-type>
+        <object-type name="arvore3" sid="669759868565312">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863612158784533" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Projects\zackrecicla\sprites\rio\arvore.png">
                         <collision-poly>
-                            <point x="0.101695" y="0.0565371" />
-                            <point x="0.514124" y="0.00353357" />
-                            <point x="0.903955" y="0.0706714" />
-                            <point x="0.932203" y="0.473498" />
-                            <point x="0.903955" y="0.876325" />
-                            <point x="0.514124" y="0.996466" />
-                            <point x="0.101695" y="0.890459" />
-                            <point x="0.0677966" y="0.473498" />
+                            <point x="0.0770636" y="0.0642939" />
+                            <point x="0.464938" y="0" />
+                            <point x="0.895909" y="0.0508408" />
+                            <point x="1" y="0.481339" />
+                            <point x="0.658875" y="0.837845" />
+                            <point x="0.464938" y="1" />
+                            <point x="0.400292" y="0.797486" />
+                            <point x="0" y="0.481339" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lixeiravermelha" sid="794418722911043">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="532497069906773" speed="5">
+                    <frame duration="1" hotspotX="0.502825" hotspotY="1" original-source="C:\Projects\zackrecicla\lixeira-vermelha.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.546969" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.431195" />
+                            <point x="1" y="0.94182" />
+                            <point x="0.546969" y="1" />
+                            <point x="0" y="0.959737" />
+                            <point x="0" y="0.431195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ponte" sid="854428325576141">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="421044494562297">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242389885482408" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Projects\ref\Platformer-Game-Free-TileSet\png\elements\plate1.png">
+                        <collision-poly>
+                            <point x="0.0719844" y="0" />
+                            <point x="0.931907" y="0" />
+                            <point x="1" y="0.476744" />
+                            <point x="0.935798" y="1" />
+                            <point x="0.0797665" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pantano" sid="124134002055122">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222152716502196" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Projects\zackrecicla\pantano.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.161616" />
+                            <point x="0.5" y="0.0707071" />
+                            <point x="0.953125" y="0.0606061" />
+                            <point x="1" y="0.494949" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="thrower" sid="862569606040114">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="377380198306262" speed="5">
+                    <frame duration="1" hotspotX="0.511278" hotspotY="0.984615" original-source="C:\Projects\zackrecicla\sprites\forest\objects\Bush (2).png">
+                        <collision-poly>
+                            <point x="0.135338" y="0.276923" />
+                            <point x="0.496241" y="0.0153846" />
+                            <point x="0.879699" y="0.246154" />
+                            <point x="0.932331" y="0.492308" />
+                            <point x="0.992481" y="0.984615" />
+                            <point x="0.496241" y="1" />
+                            <point x="0.0075188" y="0.984615" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="garrafa" sid="465048121517171">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="658887865132310">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597335519567732" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\garrafa.png">
+                        <collision-poly>
+                            <point x="0.307692" y="0.14" />
+                            <point x="0.525641" y="0.01" />
+                            <point x="0.705128" y="0.155" />
+                            <point x="0.974359" y="0.51" />
+                            <point x="0.846154" y="0.92" />
+                            <point x="0.525641" y="0.98" />
+                            <point x="0.192308" y="0.925" />
+                            <point x="0.025641" y="0.51" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mosquito" sid="273641908875715">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="995913982824711">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527378497468869" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184896" y="0.341146" />
+                            <point x="0.768229" y="0.341146" />
+                            <point x="0.768229" y="0.776042" />
+                            <point x="0.184896" y="0.773438" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg3" sid="848704584024959">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\rio\bg-3.png" />
+        </object-type>
+        <object-type name="chao3" sid="343777857589220">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="787384078333307">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Projects\zackrecicla\sprites\rio\chao-3.png" />
+        </object-type>
+        <object-type name="lixeiraverde" sid="827231431412893">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171875922622680" speed="5">
+                    <frame duration="1" hotspotX="0.519774" hotspotY="1.09507" original-source="C:\Projects\zackrecicla\lixeira-verde.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.585772" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.37405" />
+                            <point x="1" y="1" />
+                            <point x="0.585772" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.37405" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lixeiraamarela" sid="987529027127053">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883736799663434" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1.12014" original-source="C:\Projects\zackrecicla\lixeira-amarela.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.565627" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.396573" />
+                            <point x="1" y="1" />
+                            <point x="0.565627" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.396573" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pantano2" sid="887256360182013">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="450990869889827" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Projects\zackrecicla\pantano2.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.161616" />
+                            <point x="0.5" y="0.0707071" />
+                            <point x="0.953125" y="0.0606061" />
+                            <point x="1" y="0.494949" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pantano3" sid="465998430285222">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432551283709651" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Projects\zackrecicla\pantano3.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.161616" />
+                            <point x="0.5" y="0.0707071" />
+                            <point x="0.953125" y="0.0606061" />
+                            <point x="1" y="0.494949" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg4" sid="789516362860578">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\rio\bg-4.png" />
+        </object-type>
+        <object-type name="escorpiao" sid="276110657482381">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="759764486696635" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="331350740616450">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="553332378817531">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477518616544421" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.896552" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.894737" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.894737" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.896552" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-4.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.896552" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-5.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.892857" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-6.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.890909" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-7.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.9" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-8.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.901639" original-source="C:\Projects\zackrecicla\sprites\scorpion\scorpion-9.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -588,9 +1002,13 @@
     <layout-folder>
         <layout>start.xml</layout>
         <layout>fase-1.xml</layout>
+        <layout>fase-2.xml</layout>
+        <layout>fase-3.xml</layout>
+        <layout>fase-4.xml</layout>
+        <layout>fase-5.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>fase-1.xml</event-sheet>
+        <event-sheet>fase.xml</event-sheet>
         <event-sheet>start.xml</event-sheet>
     </event-folder>
     <global-instances>

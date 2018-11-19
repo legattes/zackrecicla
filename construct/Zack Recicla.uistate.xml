@@ -9,10 +9,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         </active>
         <display name="HTML5" />
     </configurations>
-    <open-tabs>
-        <layout order="1">fase-1</layout>
-        <event-sheet active="1" order="2">fase-1</event-sheet>
-    </open-tabs>
+    <open-tabs />
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
@@ -23,7 +20,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
@@ -32,19 +29,31 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/tronco/" />
         <folder expanded="1" path="animation-folder/arvore1/" />
         <folder expanded="1" path="animation-folder/lenhador/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/arvore2/" />
+        <folder expanded="1" path="animation-folder/papiro/" />
         <folder expanded="1" path="animation-folder/heart3/" />
-        <folder expanded="1" path="animation-folder/deadframe/" />
+        <folder expanded="1" path="animation-folder/modal/" />
         <folder expanded="1" path="animation-folder/bilhete/" />
-        <folder expanded="1" path="animation-folder/lixo1/" />
-        <folder expanded="1" path="animation-folder/lixo2/" />
+        <folder expanded="1" path="animation-folder/papel1/" />
+        <folder expanded="1" path="animation-folder/papel/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
-        <folder expanded="1" path="animation-folder/lixeira/" />
-        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/lixeiraazul/" />
+        <folder expanded="1" path="animation-folder/fundopreto/" />
+        <folder expanded="1" path="animation-folder/puff/" />
+        <folder expanded="1" path="animation-folder/arvore3/" />
+        <folder expanded="1" path="animation-folder/lixeiravermelha/" />
+        <folder expanded="1" path="animation-folder/ponte/" />
+        <folder expanded="1" path="animation-folder/pantano/" />
+        <folder expanded="1" path="animation-folder/thrower/" />
+        <folder expanded="1" path="animation-folder/garrafa/" />
+        <folder expanded="1" path="animation-folder/mosquito/" />
+        <folder expanded="1" path="animation-folder/lixeiraverde/" />
+        <folder expanded="1" path="animation-folder/lixeiraamarela/" />
+        <folder expanded="1" path="animation-folder/pantano2/" />
+        <folder expanded="1" path="animation-folder/pantano3/" />
+        <folder expanded="1" path="animation-folder/escorpiao/" />
     </folders-expanded>
 </c2uistate>
