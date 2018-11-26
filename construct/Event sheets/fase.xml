@@ -1313,5 +1313,99 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="952782191400741">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="144776120409260" type="misterlixo" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="192225215513123" type="misterlixo">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="936849690547704">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="914852874316752" type="misterlixo">
+                            <param id="0" name="Object">zack</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="488306347755856">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="429307176299652" type="zack">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">misterlixo.Y - 200</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="763481917304594">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="196327419870394" type="misterlixo">
+                                            <param id="0" name="Instance variable">vidas</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="440750486244431" type="misterlixo">
+                                            <param id="0" name="Instance variable">vidas</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action behavior="Flash" id="0" name="Flash" sid="518095014765138" type="misterlixo">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">1.0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="618919647430500">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="723151615525771" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="3" name="Start" sid="525974644841960" type="puff">
+                                            <param id="0" name="From">1</param>
+                                        </action>
+                                        <action id="-4" name="Set position to another object" sid="886597051276286" type="puff">
+                                            <param id="0" name="Object">misterlixo</param>
+                                            <param id="1" name="Image point (optional)">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="577903026424311" type="puff">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="992735505722356" type="misterlixo" />
+                                        <action id="-16" name="Wait" sid="220542029303785" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="796217668711400" type="puff">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="191604823592500">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="846020228462892" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="769847245026912" type="zack">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="417053636387538" type="zack">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
