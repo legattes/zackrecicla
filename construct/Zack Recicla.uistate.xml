@@ -9,7 +9,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         </active>
         <display name="HTML5" />
     </configurations>
-    <open-tabs />
+    <open-tabs>
+        <layout active="1" order="1">fase-5</layout>
+        <layout order="3">fase-4</layout>
+        <layout order="4">fase-3</layout>
+        <layout order="5">fase-2</layout>
+        <layout order="6">fase-1</layout>
+        <layout order="7">start</layout>
+        <layout order="8">fase-6</layout>
+        <layout order="9">fase-7</layout>
+        <event-sheet order="2">fase</event-sheet>
+        <event-sheet order="10">minigame</event-sheet>
+    </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
@@ -39,7 +50,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/lixeiraazul/" />
         <folder expanded="1" path="animation-folder/fundopreto/" />
         <folder expanded="1" path="animation-folder/puff/" />
@@ -55,5 +65,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/pantano2/" />
         <folder expanded="1" path="animation-folder/pantano3/" />
         <folder expanded="1" path="animation-folder/escorpiao/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/plastico1/" />
+        <folder expanded="1" path="animation-folder/vidro1/" />
+        <folder expanded="1" path="animation-folder/metal1/" />
+        <folder expanded="1" path="animation-folder/mesa/" />
+        <folder expanded="1" path="animation-folder/comida1/" />
+        <folder expanded="1" path="animation-folder/comida2/" />
+        <folder expanded="1" path="animation-folder/pneu/" />
+        <folder expanded="1" path="animation-folder/homem/" />
+        <folder expanded="1" path="animation-folder/lixeiramarrom/" />
+        <folder expanded="1" path="animation-folder/comidagame/" />
+        <folder expanded="1" path="animation-folder/metalgame/" />
+        <folder expanded="1" path="animation-folder/papelgame/" />
+        <folder expanded="1" path="animation-folder/plasticogame/" />
+        <folder expanded="1" path="animation-folder/vidrogame/" />
     </folders-expanded>
 </c2uistate>

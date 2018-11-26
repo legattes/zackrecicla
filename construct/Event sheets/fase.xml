@@ -123,42 +123,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="776824375413365">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="300034883422054" type="lenhador">
-                            <param id="0" name="Object">tronco</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="850324966811683">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="742976363629825" type="lenhador">
-                                    <param id="0" name="Instance variable">move</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;left&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="520789113072315" type="lenhador">
-                                    <param id="0" name="Instance variable">move</param>
-                                    <param id="1" name="Value">&quot;right&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="236951496751530">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="823841343527559" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="956624961285988" type="lenhador">
-                                    <param id="0" name="Instance variable">move</param>
-                                    <param id="1" name="Value">&quot;left&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
                 <event-block sid="191831636188944">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="630671554583990" type="lenhador">
@@ -198,29 +162,17 @@
                             <conditions>
                                 <condition id="-22" name="Else" sid="541053094359249" type="System" />
                             </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="765826863071757">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="865161654463868" type="zack">
-                                            <param id="0" name="Instance variable">vida</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-12" name="Subtract from" sid="715319585301302" type="zack">
-                                            <param id="0" name="Instance variable">vida</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action behavior="Flash" id="0" name="Flash" sid="636694694288221" type="zack">
-                                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                                            <param id="2" name="Duration">1.0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="715319585301302" type="zack">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="636694694288221" type="zack">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -236,19 +188,90 @@
                 <action id="-15" name="Set visible" sid="308533900567295" type="fundopreto">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="-15" name="Set visible" sid="891988281394266" type="papiro">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="886096601049673" type="Text2">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="130946488997790" type="Text3">
-                    <param id="0" name="Visibility">1</param>
-                </action>
                 <action id="-13" name="Set time scale" sid="499548511969882" type="System">
                     <param id="0" name="Time scale">0</param>
                 </action>
+                <action id="-15" name="Set visible" sid="891988281394266" type="papiro">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="676140848093975">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="378186729817740" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;fase-1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="173488345288657" type="papiro">
+                            <param id="0" name="Animation">&quot;fase1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="739848959054926">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="227677491527470" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;fase-2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="909495721716517" type="papiro">
+                            <param id="0" name="Animation">&quot;fase2&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="808496203612842">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="560781931275367" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;fase-3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="445828897852995" type="papiro">
+                            <param id="0" name="Animation">&quot;fase3&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="882615470989209">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="397492903054841" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;fase-4&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="641902124260823" type="papiro">
+                            <param id="0" name="Animation">&quot;fase4&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="101988480996120">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="645363383672079" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;fase-5&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="537837972638262" type="papiro">
+                            <param id="0" name="Animation">&quot;fase5&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="125489914489226">
             <conditions>
@@ -262,12 +285,6 @@
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="-15" name="Set visible" sid="361618513333910" type="papiro">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="301579891668274" type="Text2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="783034784395841" type="Text3">
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="254418960688982" type="bilhete" />
@@ -622,7 +639,7 @@
             </conditions>
             <actions>
                 <action id="-18" name="Rotate clockwise" sid="108416015216822" type="garrafa">
-                    <param id="0" name="Degrees">6</param>
+                    <param id="0" name="Degrees">8</param>
                 </action>
                 <action behavior="CustomMovement" id="4" name="Accelerate toward angle" sid="913653418600978" type="garrafa">
                     <param id="0" name="Acceleration">500</param>
@@ -636,7 +653,7 @@
                 <event-block sid="829466007682072">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="344038862516475" type="System">
-                            <param id="0" name="Interval (seconds)">1.25</param>
+                            <param id="0" name="Interval (seconds)">1.1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -654,29 +671,17 @@
                             <param id="0" name="Object">zack</param>
                         </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="865825022459734">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="922852517491259" type="zack">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-12" name="Subtract from" sid="689785009647902" type="zack">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action behavior="Flash" id="0" name="Flash" sid="558271722233234" type="zack">
-                                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                                    <param id="2" name="Duration">1.0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="689785009647902" type="zack">
+                            <param id="0" name="Instance variable">vida</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="558271722233234" type="zack">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
@@ -698,6 +703,26 @@
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="795720719937123">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="997612102648357" type="mosquito">
+                            <param id="0" name="Object">zack</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="688018742763149" type="zack">
+                            <param id="0" name="Instance variable">vida</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="896290564081601" type="zack">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="455661561645526">
             <conditions>
@@ -947,7 +972,346 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="182103221346727">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="699223669408569" type="escorpiao">
+                            <param id="0" name="Object">zack</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="708957167254011">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="117884044846392" type="zack">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">escorpiao.Y - 70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Start" sid="457023619400308" type="puff">
+                                    <param id="0" name="From">1</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="462245634678001" type="puff">
+                                    <param id="0" name="Object">escorpiao</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="264202801924547" type="puff">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="458614917562627" type="escorpiao" />
+                                <action id="-13" name="Set boolean" sid="640583406908255" type="zack">
+                                    <param id="0" name="Instance variable">envenenado</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="161048713008639" type="System">
+                                    <param id="0" name="Seconds">0.7</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="755281099449795" type="puff">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="253158879496067">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="273741467517207" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="716137305904355" type="zack">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="474875063725831" type="zack">
+                                    <param id="0" name="Instance variable">envenenado</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="715147389126827">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="984232883684100" type="plastico1">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="255939960938455" type="plastico1" />
+                <action id="-10" name="Add to" sid="913579149801936" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="739487508866604">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="265255418096492" type="vidro1">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="802855004493147" type="vidro1" />
+                <action id="-10" name="Add to" sid="803581585600209" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="596863013128862">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="648399500310168" type="metal1">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="861170983713530" type="metal1" />
+                <action id="-10" name="Add to" sid="140939542629142" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="741325955133206">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="761543799398518" type="zack">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="583149119248126" type="heart3">
+                    <param id="0" name="Animation">&quot;25vidas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="172793976019372">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="449749522706389" type="zack">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="412861963700383" type="heart3">
+                    <param id="0" name="Animation">&quot;15vidas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="981318530069161">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="260611714079705" type="zack">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="748374085958452" type="heart3">
+                    <param id="0" name="Animation">&quot;05vidas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="380770389841880">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="816480988288913" type="zack">
+                    <param id="0" name="Instance variable">envenenado</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="295621941283281">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="303225315474450" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="109210988662957" type="zack">
+                            <param id="0" name="Instance variable">vida</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="197864960574762">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="839704672912742" type="comida1">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="390472916468350" type="comida1" />
+                <action id="-10" name="Add to" sid="178346923542246" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="201560303775986">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="674664692476578" type="comida2">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="375174326394719" type="comida2" />
+                <action id="-10" name="Add to" sid="517071946865474" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="830839805905247">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="827791015407293" type="homem">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="161502055909767">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="129742578366582" type="zack">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">homem.Y - 150</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Start" sid="813507441795852" type="puff">
+                            <param id="0" name="From">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="213727404660812" type="puff">
+                            <param id="0" name="Object">homem</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="113229840474997" type="puff">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="941206575144745" type="homem" />
+                        <action id="-16" name="Wait" sid="659123794389014" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="892205023456497" type="puff">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="689556244329155" type="System">
+                            <param id="0" name="Object to create">comida2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="685795057173009" type="comida2">
+                            <param id="0" name="Object">puff</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="307408050946137" type="comida2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="949884489125981">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="715164724453775" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="976698370174043">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="786789904078235" type="zack">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="894870876573229" type="zack">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="751769287244019" type="zack">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="979172583167704">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="131683617731370" type="lixeiramarrom">
+                    <param id="0" name="Object">zack</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="552514132782711">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="421320106607742" type="System">
+                            <param id="0" name="Variable">lixos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="619543927093545" type="fundopreto">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="632808371789152" type="modal">
+                            <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="584311647098159" type="modal">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="781859136994219" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="343530465540159">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="166045523501637" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="329401204328337" type="fundopreto">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="663684078543583" type="modal">
+                            <param id="0" name="Animation">&quot;faltalixo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="973340070057294" type="modal">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="657553167757290" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="558102098027327">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="564801289283510" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="263317864940573" type="zack">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>minigame</name>
+    <events>
+        <event-block sid="867995086564052">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="439295758353222" type="lixeiraamarela">
+                    <param id="0" name="Object">metalgame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="610567370968313" type="metalgame" />
+                <action id="-10" name="Add to" sid="242699260846822" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="159050603209490">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="856474154852131" type="lixeiraazul">
+                    <param id="0" name="Object">papelgame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="374980115108762" type="papelgame" />
+                <action id="-10" name="Add to" sid="979240746957315" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="241380486616677">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="452703578853449" type="lixeiramarrom">
+                    <param id="0" name="Object">comidagame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="944205263424651" type="comidagame" />
+                <action id="-10" name="Add to" sid="835351719221481" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="162021197817270">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="876250656316868" type="lixeiraverde">
+                    <param id="0" name="Object">vidrogame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="308843136606884" type="vidrogame" />
+                <action id="-10" name="Add to" sid="579305695155190" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="694494255927959">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="770699820579497" type="lixeiravermelha">
+                    <param id="0" name="Object">plasticogame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="827638047123000" type="plasticogame" />
+                <action id="-10" name="Add to" sid="120317976003090" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="828517560869771">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="273609583760049" type="System">
+                    <param id="0" name="Variable">lixos</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="582928201376528" type="fundopreto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="830625429134596" type="modal">
+                    <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="750630604947745" type="modal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="885848674554470" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="790362726242727">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="974670824294586" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="104523317277281" type="modal" />
+                <condition id="2" name="Is playing" sid="490638792248483" type="modal">
+                    <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="804620877060804" type="fundopreto">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="649077805445092" type="System" />
+                <action id="-13" name="Set time scale" sid="643873845384434" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-43" name="Go to next/previous layout" sid="262902517001983" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

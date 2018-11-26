@@ -1993,8 +1993,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>576</x>
-                        <y>384</y>
+                        <x>581</x>
+                        <y>551</y>
                         <z>0</z>
                         <width>26.002220154</width>
                         <height>37.178153992</height>
@@ -2112,14 +2112,124 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>135.071075439</x>
-                        <y>82.130935669</y>
+                        <x>384</x>
+                        <y>576</y>
                         <z>0</z>
                         <width>28.261636734</width>
                         <height>72.46572876</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="plastico1" uid="77">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2287</x>
+                        <y>528</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>58.915691376</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501084626</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="plastico1" uid="78">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4480</x>
+                        <y>404</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>58.915691376</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501084626</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="plastico1" uid="79">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5824</x>
+                        <y>565</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>58.915691376</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501084626</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="plastico1" uid="80">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3136</x>
+                        <y>402</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>58.915691376</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501084626</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="plastico1" uid="81">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7055</x>
+                        <y>173</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>58.915691376</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501084626</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -2152,6 +2262,7 @@
                     </properties>
                     <instance-variables>
                         <vida>3</vida>
+                        <envenenado>false</envenenado>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -2345,65 +2456,11 @@
                         <x>511.999969482</x>
                         <y>373.050445557</y>
                         <z>0</z>
-                        <width>831.557312012</width>
-                        <height>744.457458496</height>
+                        <width>657.357543945</width>
+                        <height>621.202941895</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501103759</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Text2" uid="160">
-                    <properties>
-                        <text>Zack, sua primeira missão é recolher os papéis espalhados pela floresta. Tome cuidado pois há uma madeireira ilegal na região e os lenhadores não gostam de ninguém atrapalhando. No final da floresta, perto de um rio, existe uma lixeira azul. Jogue nela os papéis coletados</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Calibri Light,-32,300,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>272.5</x>
-                        <y>178</y>
-                        <z>0</z>
-                        <width>479</width>
-                        <height>433</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Text3" uid="161">
-                    <properties>
-                        <text>Pressione Enter para continuar</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Calibri Light,-24,300,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>276.5</x>
-                        <y>582</y>
-                        <z>0</z>
-                        <width>335</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotY>0.47883597</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
