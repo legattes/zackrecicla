@@ -363,6 +363,18 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="intro" pingpong="0" repeatcount="1" repeatto="0" sid="307539493073643" speed="5">
+                    <frame duration="1" hotspotX="0.506098" hotspotY="0.485411" original-source="C:\Projects\zackrecicla\sprites\ui\papiro0.png">
+                        <collision-poly>
+                            <point x="0.0609756" y="0.0503979" />
+                            <point x="0.963415" y="0.0397878" />
+                            <point x="0.981707" y="0.944297" />
+                            <point x="0.506098" y="0.96817" />
+                            <point x="0.0335366" y="0.941645" />
+                            <point x="0.027439" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="heart3" sid="261139012667188">
@@ -469,6 +481,9 @@
                 <animation framecount="1" loop="0" name="faltalixo" pingpong="0" repeatcount="1" repeatto="0" sid="725985606337314" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\modal-faltalixo.png" />
                 </animation>
+                <animation framecount="1" loop="0" name="professor" pingpong="0" repeatcount="1" repeatto="0" sid="383167430562907" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\sprites\ui\modal-professor.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="timer" sid="731584906293229">
@@ -499,25 +514,6 @@
                             <point x="0.475352" y="0.981195" />
                             <point x="0" y="0.63725" />
                             <point x="0.0179802" y="0.465278" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="papel" sid="597116492833456">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="600692273699560" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Projects\ref\crumpled-paper-ball-free-vector.png">
-                        <collision-poly>
-                            <point x="0.0585106" y="0.36236" />
-                            <point x="0.5" y="0.00842697" />
-                            <point x="0.973404" y="0.328652" />
-                            <point x="0.954787" y="0.5" />
-                            <point x="0.986702" y="0.685393" />
-                            <point x="0.5" y="0.988764" />
-                            <point x="0.0345745" y="0.662921" />
-                            <point x="0.0611702" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1159,16 +1155,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="780556374115821" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.96875" original-source="C:\Projects\zackrecicla\comida1.png">
+                    <frame duration="1" hotspotX="0.494845" hotspotY="0.988889" original-source="C:\Projects\zackrecicla\sprites\comida.png">
                         <collision-poly>
-                            <point x="0.0806452" y="0.125" />
-                            <point x="0.5" y="0.09375" />
-                            <point x="0.806452" y="0.34375" />
-                            <point x="0.887097" y="0.46875" />
-                            <point x="0.951613" y="0.90625" />
-                            <point x="0.5" y="0.96875" />
-                            <point x="0.016129" y="0.96875" />
-                            <point x="0.145161" y="0.46875" />
+                            <point x="0.0625208" y="0.0722222" />
+                            <point x="0.494845" y="0.0375" />
+                            <point x="0.810775" y="0.315278" />
+                            <point x="0.893914" y="0.454167" />
+                            <point x="0.960426" y="0.940278" />
+                            <point x="0.494845" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0877948" y="0.465278" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1259,16 +1255,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="865758135084534" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.96875" original-source="C:\Projects\zackrecicla\comida1.png">
+                    <frame duration="1" hotspotX="0.494845" hotspotY="1.01111" original-source="C:\Projects\zackrecicla\sprites\comida.png">
                         <collision-poly>
-                            <point x="0.0806452" y="0.125" />
-                            <point x="0.5" y="0.09375" />
-                            <point x="0.806452" y="0.34375" />
-                            <point x="0.887097" y="0.46875" />
-                            <point x="0.951613" y="0.90625" />
-                            <point x="0.5" y="0.96875" />
-                            <point x="0.016129" y="0.96875" />
-                            <point x="0.145161" y="0.46875" />
+                            <point x="0.0625208" y="0.0722222" />
+                            <point x="0.494845" y="0.0375" />
+                            <point x="0.810775" y="0.315278" />
+                            <point x="0.893914" y="0.454167" />
+                            <point x="0.960426" y="0.940278" />
+                            <point x="0.494845" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.129032" y="0.454167" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1457,10 +1453,65 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="intro" sid="970011067354442">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\ui\intro.jpg" />
+        </object-type>
+        <object-type name="bg6" sid="758960974925771">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\background\bg6.png" />
+        </object-type>
+        <object-type name="final" sid="682075672317590">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\ui\fim.jpg" />
+        </object-type>
+        <object-type name="TiledBackground" sid="661907283841702">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projects\zackrecicla\sprites\ui\fase-75.jpg" />
+        </object-type>
+        <object-type name="useomouse" sid="940758403283806">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="professor" sid="654040404091012">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517259849179814" speed="5">
+                    <frame duration="1" hotspotX="0.505226" hotspotY="0.996169" original-source="C:\Projects\zackrecicla\sprites\character\professor.png">
+                        <collision-poly>
+                            <point x="0.125436" y="0.0881226" />
+                            <point x="0.864111" y="0.0881226" />
+                            <point x="0.777003" y="0.494253" />
+                            <point x="0.783972" y="0.812261" />
+                            <point x="0.494774" y="0.992337" />
+                            <point x="0.209059" y="0.808429" />
+                            <point x="0.0418119" y="0.494253" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="professor2" sid="914740831187313">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="500558001936786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projects\zackrecicla\sprites\character\professor2.png">
+                        <collision-poly>
+                            <point x="0.106195" y="0.161074" />
+                            <point x="0.889381" y="0.167785" />
+                            <point x="0.982301" y="0.973154" />
+                            <point x="0.5" y="1" />
+                            <point x="0.205752" y="0.687919" />
+                            <point x="0.0575221" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>start.xml</layout>
+        <layout>intro.xml</layout>
         <layout>fase-1.xml</layout>
         <layout>fase-2.xml</layout>
         <layout>fase-3.xml</layout>
@@ -1468,12 +1519,13 @@
         <layout>fase-5.xml</layout>
         <layout>fase-6.xml</layout>
         <layout>fase-7.xml</layout>
+        <layout>fase-75.xml</layout>
         <layout>fase-8.xml</layout>
+        <layout>final.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>fase.xml</event-sheet>
         <event-sheet>start.xml</event-sheet>
-        <event-sheet>minigame.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="0" />

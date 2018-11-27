@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>fase-7</name>
-    <sid>411052670129126</sid>
-    <event-sheet>minigame</event-sheet>
+    <sid>549205789970688</sid>
+    <event-sheet>fase</event-sheet>
     <size>
         <width>1024</width>
         <height>720</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="bg" sid="808460086257637">
+        <layer name="bg" sid="796704724151388">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -31,7 +31,7 @@
             <instances />
             <effects />
         </layer>
-        <layer name="objects" sid="992176545332457">
+        <layer name="objects" sid="841054464563572">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -47,7 +47,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="lixeiraamarela" uid="55">
+                <instance type="lixeiraamarela" uid="216">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -69,7 +69,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="lixeiraazul" uid="56">
+                <instance type="lixeiraazul" uid="217">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -91,7 +91,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="lixeiramarrom" uid="204">
+                <instance type="lixeiramarrom" uid="218">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -101,7 +101,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>512.276855469</x>
+                        <x>512</x>
                         <y>672</y>
                         <z>0</z>
                         <width>98.014205933</width>
@@ -113,7 +113,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="lixeiraverde" uid="205">
+                <instance type="lixeiraverde" uid="220">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -135,7 +135,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="lixeiravermelha" uid="206">
+                <instance type="lixeiravermelha" uid="221">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -157,7 +157,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="comidagame" uid="207">
+                <instance type="comidagame" uid="227">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -175,19 +175,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>288</x>
-                        <y>128</y>
+                        <x>128</x>
+                        <y>224</y>
                         <z>0</z>
-                        <width>140.854537964</width>
-                        <height>72.699111938</height>
+                        <width>81.374855042</width>
+                        <height>75.502433777</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.96875</hotspotY>
+                        <hotspotX>0.494845361</hotspotX>
+                        <hotspotY>1.01111114</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="metalgame" uid="208">
+                <instance type="metalgame" uid="236">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -205,8 +205,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>513.029602051</x>
-                        <y>288</y>
+                        <x>320</x>
+                        <y>224</y>
                         <z>0</z>
                         <width>47.360824585</width>
                         <height>86.484985352</height>
@@ -217,7 +217,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="papelgame" uid="209">
+                <instance type="papelgame" uid="237">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -235,8 +235,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
-                        <y>128</y>
+                        <x>512</x>
+                        <y>224</y>
                         <z>0</z>
                         <width>127.108009338</width>
                         <height>64.449127197</height>
@@ -247,7 +247,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="plasticogame" uid="211">
+                <instance type="plasticogame" uid="238">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -266,7 +266,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>704</x>
-                        <y>352</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>38.864582062</width>
                         <height>131.739501953</height>
@@ -277,7 +277,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="vidrogame" uid="212">
+                <instance type="vidrogame" uid="239">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -295,8 +295,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>288</x>
-                        <y>416</y>
+                        <x>928</x>
+                        <y>256</y>
                         <z>0</z>
                         <width>43.733463287</width>
                         <height>140.487411499</height>
@@ -310,7 +310,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="chars" sid="878949936020909">
+        <layer name="chars" sid="333296192324410">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -325,10 +325,38 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="useomouse" uid="56">
+                    <properties>
+                        <text>Use o mouse</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Calibri,-19,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>451</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
-        <layer name="ui" sid="355375560462026">
+        <layer name="ui" sid="483938010633114">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -344,7 +372,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="fundopreto" uid="165">
+                <instance type="fundopreto" uid="240">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -366,7 +394,7 @@
                         <opacity>0.600000024</opacity>
                     </world>
                 </instance>
-                <instance type="timer" uid="166">
+                <instance type="timer" uid="241">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -396,7 +424,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="modal" uid="177">
+                <instance type="modal" uid="242">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

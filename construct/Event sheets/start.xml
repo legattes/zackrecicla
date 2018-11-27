@@ -9,11 +9,53 @@
                     <param id="0" name="Key">13</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="377076813167069" type="System">
-                    <param id="0" name="Layout">fase-1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="712000996190491">
+                    <conditions>
+                        <condition id="-9" inverted="1" name="Is visible" sid="718135269567382" type="papiro" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="215414486051602" type="papiro">
+                            <param id="0" name="Animation">&quot;intro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="723266602847898" type="fundopreto">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="365521038682790" type="fundopreto">
+                            <param id="0" name="Opacity">80</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="532495548923484" type="papiro">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="605789376129109">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="396027579545246" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-43" name="Go to next/previous layout" sid="646194234006317" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="141355116759464">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="415490684741687" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;final&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="851474763525927" type="System">
+                            <param id="0" name="Layout">start</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

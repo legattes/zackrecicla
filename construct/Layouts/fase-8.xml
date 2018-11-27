@@ -4,7 +4,7 @@
     <sid>828583071249477</sid>
     <event-sheet>fase</event-sheet>
     <size>
-        <width>1900</width>
+        <width>1440</width>
         <height>720</height>
     </size>
     <margins>
@@ -29,6 +29,26 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="bg6" uid="30">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>1440</width>
+                        <height>736</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="chao3" uid="104">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -47,39 +67,11 @@
                         <x>0</x>
                         <y>608</y>
                         <z>0</z>
-                        <width>1920</width>
+                        <width>1440</width>
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="misterlixo" uid="234">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <vidas>3</vidas>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Flash" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>992</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>320</width>
-                        <height>320</height>
-                        <depth>0</depth>
-                        <hotspotX>0.49000001</hotspotX>
-                        <hotspotY>0.894999981</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -100,33 +92,6 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>480</x>
-                        <y>480</y>
-                        <z>0</z>
-                        <width>224</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="chao3" uid="103">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1280</x>
                         <y>480</y>
                         <z>0</z>
                         <width>224</width>
@@ -175,6 +140,37 @@
                         <depth>0</depth>
                         <hotspotX>0.51028806</hotspotX>
                         <hotspotY>0.940789461</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="garrafa" uid="213">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="CustomMovement">
+                            <properties>
+                                <stepping-mode>None</stepping-mode>
+                                <pixels-per-step>5</pixels-per-step>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>-32</y>
+                        <z>0</z>
+                        <width>28.261636734</width>
+                        <height>72.46572876</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -242,6 +238,34 @@
                         <depth>0</depth>
                         <hotspotX>0.50470221</hotspotX>
                         <hotspotY>0.934156358</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="misterlixo" uid="234">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <vidas>3</vidas>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>992</x>
+                        <y>629</y>
+                        <z>0</z>
+                        <width>320</width>
+                        <height>320</height>
+                        <depth>0</depth>
+                        <hotspotX>0.49000001</hotspotX>
+                        <hotspotY>0.894999981</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

@@ -182,28 +182,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="comida1" uid="96">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2368.425292969</x>
-                        <y>516.244384766</y>
-                        <z>0</z>
-                        <width>96</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.96875</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="comida2" uid="98">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -324,28 +302,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="comida1" uid="202">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>6304</x>
-                        <y>517</y>
-                        <z>0</z>
-                        <width>96</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.96875</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="lixeiramarrom" uid="203">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -364,6 +320,28 @@
                         <depth>0</depth>
                         <hotspotX>0.502824843</hotspotX>
                         <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="comida1" uid="96">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2368</x>
+                        <y>516</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.494845361</hotspotX>
+                        <hotspotY>0.98888886</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -456,6 +434,28 @@
                         <depth>0</depth>
                         <hotspotX>0.538983047</hotspotX>
                         <hotspotY>0.989051104</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="comida1" uid="177">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6304</x>
+                        <y>517</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.494845361</hotspotX>
+                        <hotspotY>0.98888886</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
